@@ -24,6 +24,8 @@ main:
         red            : '#ff5572'
         soft_red       : '#f07178'
         no_color       : ''
+    
+    # todo: make background colors of those^
 
     ui:
         background_color           : '#242938'
