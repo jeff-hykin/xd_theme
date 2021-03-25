@@ -1,36 +1,51 @@
 main:
-    
-    code:
-        black          : '#000000'
-        white          : '#ffffff'
-        light_gray     : '#c7cbcd'
-        gray           : '#546e7a'
-        rust           : '#c17e70'
-        orange         : '#f78c6c'
-        yellow         : '#fec355'
-        bananna_yellow : '#ddd790'
-        lime           : '#c3e88d'
-        green          : '#4ec9b0'
-        bold_green     : '#4ec9b0d0'
-        vibrant_green  : '#04d895'
-        dim_green      : &main-code-dim_green '#80cbc4'
-        light_slate    : '#64bac5'
-        dark_slate     : '#3f848d'
-        light_blue     : '#89ddff'
-        blue           : '#82aaff'
-        electric_blue  : '#00aeffe7'
-        light_purple   : '#c792ea'
-        pink           : '#e57eb3'
-        red            : '#ff5572'
-        soft_red       : '#f07178'
-        no_color       : ''
+    code_colors:
+        black          : &black          '#000000'
+        white          : &white          '#ffffff'
+        light_gray     : &light_gray     '#c7cbcd'
+        gray           : &gray           '#546e7a'
+        rust           : &rust           '#c17e70'
+        orange         : &orange         '#f78c6c'
+        yellow         : &yellow         '#fec355'
+        bananna_yellow : &bananna_yellow '#ddd790'
+        lime           : &lime           '#c3e88d'
+        green          : &green          '#4ec9b0'
+        bold_green     : &bold_green     '#4ec9b0d0'
+        vibrant_green  : &vibrant_green  '#04d895'
+        dim_green      : &dim_green      '#80cbc4'
+        dark_slate     : &dark_slate     '#3f848d'
+        light_slate    : &light_slate    '#64bac5'
+        light_blue     : &light_blue     '#89ddff'
+        blue           : &blue           '#82aaff'
+        electric_blue  : &electric_blue  '#00aeffe7'
+        light_purple   : &light_purple   '#c792ea'
+        pink           : &pink           '#e57eb3'
+        red            : &red            '#ff5572'
+        soft_red       : &soft_red       '#f07178'
+        no_color       : &no_color       ''
     
     # todo: make background colors of those^
+    
+    code_general_meaning:
+        data                 : *blue
+        function             : *lime
+        punctuation          : *light_purple
+        comments             : *gray
+        atomics              : *orange
+        strings              : *light_slate
+        escape_sequence      : *orange
+        control_flow         : *light_blue
+        assignment_operators : *red
+        other_operators      : *purple
+        parameter            : *orange
+        special_variable     : *yellow
+        units                : *bananna_yellow
+        
 
     ui:
         background_color           : '#242938'
         secondary_background_color : '#293342'
-        accent_color               : *main-code-dim_green
+        accent_color               : *dim_green
         hover_background           : '#2c3b4f'
         scrollbar_color            : '#324962'
         input_box_background       : '#414863'
@@ -43,3 +58,33 @@ main:
         navy_slate                 : '#184967'
         cursor_color               : '#ff9900'
         error_red                  : '#ef5350'
+    
+    plain_text:
+        0:  hsl(200, 19%, 40%)
+        1:  hsl(200, 19%, 45%)
+        2:  hsl(200, 19%, 50%)
+        3:  hsl(200, 19%, 55%)
+        4:  hsl(200, 19%, 60%)
+        5:  hsl(200, 19%, 65%)
+        6:  hsl(200, 19%, 70%)
+        7:  hsl(200, 19%, 75%)
+        8:  hsl(200, 19%, 80%)
+        9:  hsl(200, 19%, 85%)
+        10: hsl(200, 19%, 90%)
+        11: hsl(200, 19%, 95%)
+    
+    plain_backgrounds:
+        1:  hsl(200, 19%, 13%)
+        2:  hsl(200, 19%, 15%)
+        3:  hsl(200, 19%, 18%)
+        4:  hsl(200, 19%, 20%)
+        5:  hsl(200, 19%, 24%)
+        6:  hsl(200, 19%, 27%)
+        7:  hsl(200, 19%, 30%)
+        8:  hsl(200, 19%, 33%)
+        9:  hsl(200, 19%, 36%)
+        10: hsl(200, 19%, 39%)
+        11: hsl(200, 19%, 42%)
+    
+    css_aspects:
+        strong-shadow: "0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);"

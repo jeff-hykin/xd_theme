@@ -1,0 +1,138 @@
+/* ==UserStyle==
+@name           StackSuite Just Answers
+@namespace      USO Archive
+@author         Jordy3D
+@description    `Sometimes you just want the answersThis is that sometimes. Also includes a dark theme!`
+@version        20201103.8.51
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("stackoverflow.com"), domain("superuser.com"), domain("askubuntu.com"), domain("serverfault.com"), domain("stackexchange.com") {
+    body {
+        --black          : #000000;
+        --white          : #ffffff;
+        --light_gray     : #c7cbcd;
+        --gray           : #546e7a;
+        --rust           : #c17e70;
+        --orange         : #f78c6c;
+        --yellow         : #fec355;
+        --bananna_yellow : #ddd790;
+        --lime           : #c3e88d;
+        --green          : #4ec9b0;
+        --bold_green     : #4ec9b0d0;
+        --vibrant_green  : #04d895;
+        --dim_green      : #80cbc4;
+        --dark_slate     : #3f848d;
+        --light_slate    : #64bac5;
+        --light_blue     : #89ddff;
+        --blue           : #82aaff;
+        --electric_blue  : #00aeffe7;
+        --light_purple   : #c792ea;
+        --pink           : #e57eb3;
+        --red            : #ff5572;
+        --soft_red       : #f07178;
+    }
+    
+    #sidebar,
+    .sidebar,
+    .left-sidebar,
+    .top-bar,
+    .top-bar._fixed,
+    .ml12,
+    #post-form,
+    .bottom-notice,
+    .site-footer,
+    .site-header,
+    .py24,
+    .bc-black-3,
+    .bg-black-025,
+    .h\:bg-black-025:hover,
+    .f\:bg-black-025:focus {
+        display: none !important;
+    }
+
+    .user-info {
+        display: none;
+    }
+    body a {
+        color: cornflowerblue;
+    }
+    .js-post-comments-component {
+        opacity: 0.5;
+    }
+    body .js-vote-count {
+        color: turquoise !important;
+        opacity: 1;
+    }
+    .post-taglist {
+        display: none;
+    }
+    body:not(.no-grid-comments) ul.comments-list {
+        grid-row-gap: 1rem;
+    }
+
+    .question .postcell > *:first-child {
+        display: inline-block;
+        border: whitesmoke 2px solid !important;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+    .js-post-body {
+        display: inline-block;
+        border: turquoise 2px solid !important;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+    body #question-header .question-hyperlink {
+        color: turquoise !important;
+        font-family: sans-serif !important;
+    }
+    #question-header {
+        background-color: darkslategray;
+        padding: 0.85rem 1.8rem;
+        margin-bottom: 0.8rem !important;
+        border-radius: 1rem;
+    }
+    #question-header + div {
+        opacity: 0.3;
+        border: none !important;
+    }
+    .js-voting-container > * {
+        opacity: 0.2;
+        margin-left: -10rem !important;
+    }
+    #answers-header {
+        padding-top: 3rem !important;
+        border-top: white 2px solid !important;
+        opacity: 0;
+    }
+    body {
+        padding-top: 0;
+    }
+    #content {
+        border: none;
+        margin: auto;
+        width: 60%;
+    }
+
+    #mainbar,
+    .mainbar {
+        width: 100% !important;
+    }
+
+    code, .s-prose :not(.s-code-block) > code {
+        color: var(--blue);
+    }
+    body pre.s-code-block > code .hljs-keyword {
+        color: var(--light_purple);
+    }
+    body pre.s-code-block > code .hljs-attr {
+        color: var(--dim_green);
+    }
+    body pre.s-code-block > code .hljs-params {
+        color: var(--orange);
+    }
+    body pre.s-code-block > code .hljs-number {
+        color: var(--red);
+    }
+}
