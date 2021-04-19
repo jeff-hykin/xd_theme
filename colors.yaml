@@ -12,7 +12,7 @@ main:
         green          : &green          '#4ec9b0'
         bold_green     : &bold_green     '#4ec9b0d0'
         vibrant_green  : &vibrant_green  '#04d895'
-        dim_green      : &dim_green      '#80cbc4'
+        dim_green      : &dim_green      '#80cbc4' # new dim green: #80CBAB
         dark_slate     : &dark_slate     '#3f848d'
         light_slate    : &light_slate    '#64bac5'
         light_blue     : &light_blue     '#89ddff'
